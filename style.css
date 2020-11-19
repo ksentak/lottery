@@ -6,14 +6,17 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 50px;
+  justify-items: center;
 }
 
 .lotto-ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid black;
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  justify-self: center;
 }
 
 #power-ball {
