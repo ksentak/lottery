@@ -1,4 +1,4 @@
-// Initial empty arrays
+// Initial variables
 let lottoArr = [];
 let powerball;
 
@@ -38,4 +38,14 @@ const clearLotto = () => {
   document.querySelector('#power-ball').innerHTML = '';
 };
 
-lottoGen();
+// Onclick that displays lotto nums
+const displayLotto = async () => {
+  await clearLotto();
+  lottoGen();
+};
+
+// Calls displayLotto on click
+document.querySelector('.btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  displayLotto();
+});
